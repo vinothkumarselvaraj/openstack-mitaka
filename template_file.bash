@@ -21,7 +21,8 @@ ping controller -c 5
 #
 #Clone the installer source code
 #
-
+apt-get update
+apt-get install git -y
 git clone https://github.com/vinothkumarselvaraj/openstack-mitaka.git -b git_testing
 cd openstack-mitaka/
 bash main_mitaka_install.bash
