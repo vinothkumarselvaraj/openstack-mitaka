@@ -1,22 +1,3 @@
-#!/bin/bash
-#
-# Unattended/SemiAutomatted OpenStack Installer
-# Vinoth Kumar Selvaraj
-# E-Mail: vinothkumar6664@me.com
-# OpenStack MITAKA for Ubuntu 14.04lts
-#
-#
-
-#Mitaka-package-list
-
-# Non Interactive mode !!
-#
-# The actual packages installed depends of the installation mode. If we are deploying
-# a controller or a compute node, the package list changes !.
-
-#export DEBIAN_FRONTEND=noninteractive
- 
-#Basic
 apt-get install chrony -y
 apt-get install software-properties-common -y
 DEBIAN_FRONTEND=noninteractive add-apt-repository -y  cloud-archive:mitaka 
