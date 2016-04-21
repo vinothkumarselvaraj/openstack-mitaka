@@ -37,7 +37,7 @@ rm -f /var/lib/manila/manila.sqlite
 
 #Configure share server management support options
 #Shared File Systems Option 1: No driver support for share servers management
-dd if=/dev/zero of=/etc/manila/manila-volumes bs=1 count=0 seek=100G
+dd if=/dev/zero of=/etc/manila/manila-volumes bs=1 count=0 seek=2G
 losetup /dev/loop3 /etc/manila/manila-volumes
 pvcreate /dev/loop3
 vgcreate manila-volumes /dev/loop3
