@@ -10,11 +10,13 @@
 #keystone Terminal comments
 
 #keystone
-service keystone stop
+#service keystone stop
 echo "manual" > /etc/init/keystone.override
 su -s /bin/sh -c "keystone-manage db_sync" keystone
 keystone-manage fernet_setup --keystone-user keystone --keystone-group keystone
 ln -s /etc/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-enabled
+service keystone stop
+su -s /bin/sh -c "keystone-manage db_sync" keystone
 service apache2 restart
 rm -f /var/lib/keystone/keystone.db
 
