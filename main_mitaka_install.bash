@@ -38,7 +38,7 @@ cp /etc/keystone/keystone-paste.ini /etc/keystone/keystone-paste.ini-bkp
 
 #backup default apache files
 cp /etc/apache2/apache2.conf /etc/apache2/apache2.conf-bkp
-cp /etc/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-available/wsgi-keystone.conf-bkp
+#cp /etc/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-available/wsgi-keystone.conf-bkp
 
 #backup default glance files
 cp /etc/glance/glance-api.conf /etc/glance/glance-api.conf-bkp 
@@ -84,8 +84,8 @@ service keystone stop
 #copy pre-configured apache files
 cp ./mitaka_configration/apache2/apache2.conf /etc/apache2/apache2.conf
 cp ./mitaka_configration/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-available/wsgi-keystone.conf
-ln -s /etc/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-enabled
-service apache2 restart 
+#ln -s /etc/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-enabled
+#service apache2 restart 
 
 #copy pre-configured glance files
 cp ./mitaka_configration/glance/glance-api.conf /etc/glance/glance-api.conf
