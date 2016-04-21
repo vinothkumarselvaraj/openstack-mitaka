@@ -12,7 +12,7 @@
 #Always backup first
 #
 
-#cp -r mitaka_configration mitaka_configration_bkp
+cp -r mitaka_configration mitaka_configration_bkp
 find ./mitaka_configration -type f -exec sed -i -e 's/192.168.2.161/'$my_ip'/g' {} \;
 find ./mitaka_configration -type f -exec sed -i -e 's/cloudenablers_interface_name/'$INTERFACE_NAME'/g' {} \;
 
@@ -137,8 +137,8 @@ bash mitaka_terminal_commands/manila_terminal_commands.bash
 #
 #Restore git clone default IP file in case of re-running
 #
-#mv mitaka_configration mitaka_configration_executed
-#cp -r mitaka_configration_bkp mitaka_configration
+mv mitaka_configration mitaka_configration_executed
+cp -r mitaka_configration_bkp mitaka_configration
 
 echo "Installation successful :-)"
 
