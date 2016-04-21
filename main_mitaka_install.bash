@@ -21,8 +21,9 @@ find ./mitaka_configration -type f -exec sed -i -e 's/cloudenablers_interface_na
 #Install the MariaDB and create the appropriate Databases;
 #
 
-bash mitaka_package_install.bash
 bash dbinstall.bash
+bash mitaka_package_install.bash
+
 
 #
 #Backup the default files that comes with package installation.
