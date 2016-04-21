@@ -1,7 +1,7 @@
 apt-get update
 apt-get install chrony -y
 apt-get install software-properties-common -y
-add-apt-repository cloud-archive:mitaka
+add-apt-repository cloud-archive:mitaka -y
 #DEBIAN_FRONTEND=noninteractive add-apt-repository -y  cloud-archive:mitaka 
 #echo "deb http://ubuntu-cloud.archive.canonical.com/ubuntu trusty-updates/mitaka main" > /etc/apt/sources.list.d/cloudarchive-mitaka.list
 apt-get update && apt-get dist-upgrade -y
