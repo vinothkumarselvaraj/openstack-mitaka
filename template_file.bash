@@ -23,6 +23,6 @@ ping controller -c 5
 #
 apt-get update
 apt-get install git -y
-git clone https://github.com/vinothkumarselvaraj/openstack-mitaka.git -b git_testing
+git clone https://github.com/vinothkumarselvaraj/openstack-mitaka.git -b dos2unix
 cd openstack-mitaka/
 bash main_mitaka_install.bash
