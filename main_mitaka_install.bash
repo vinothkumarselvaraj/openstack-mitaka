@@ -113,15 +113,16 @@ cp ./mitaka_configration/manila/manila.conf /etc/manila/manila.conf
 
 #
 #Run the terminal commands 
-#sourcing environment is important
+#sourcing environment is important but not before keystone
 #
-source admin-openrc
 
 #run basic environment setup commands
 bash mitaka_terminal_commands/basic_terminal_commands.bash
 
 #run keystone environment set commands
 bash mitaka_terminal_commands/keystone_terminal_commands.bash
+
+source admin-openrc
 
 #run glance environment set commands
 bash mitaka_terminal_commands/glance_terminal_commands.bash
