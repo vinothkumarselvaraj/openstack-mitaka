@@ -25,4 +25,4 @@ apt-get update
 apt-get install git -y
 git clone https://github.com/vinothkumarselvaraj/openstack-mitaka.git -b dos2unix
 cd openstack-mitaka/
-bash main_mitaka_install.bash
+bash main_mitaka_install.bash | tee -a /var/log/my_install_log.log
