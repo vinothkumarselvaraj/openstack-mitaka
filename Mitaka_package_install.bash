@@ -1,6 +1,6 @@
 apt-get install chrony -y
 apt-get install software-properties-common -y
-DEBIAN_FRONTEND=noninteractive add-apt-repository -y  cloud-archive:mitaka 
+#DEBIAN_FRONTEND=noninteractive add-apt-repository -y  cloud-archive:mitaka 
 apt-get update && apt-get dist-upgrade -y
 apt-get install python-openstackclient -y
 apt-get install python-pymysql -y
