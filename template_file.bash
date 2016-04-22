@@ -25,4 +25,14 @@ apt-get update
 apt-get install git -y
 git clone https://github.com/vinothkumarselvaraj/openstack-mitaka.git -b dos2unix
 cd openstack-mitaka/
+
+#
+#Always backup first
+#
+
+cp -r mitaka_configration mitaka_configration_bkp
+find ./mitaka_configration -type f -exec sed -i -e 's/192.168.2.161/'$my_ip'/g' {} \;
+find ./mitaka_configration -type f -exec sed -i -e 's/cloudenablers_interface_name/'$INTERFACE_NAME'/g' {} \;
+
+#Start the main installer script
 bash main_mitaka_install.bash | tee -a /var/log/my_install_log.log
