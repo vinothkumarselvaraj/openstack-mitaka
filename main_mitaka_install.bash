@@ -70,8 +70,8 @@ service memcached restart
 
 #copy pre-configured keystone files
 cp ./mitaka_configration/keystone/keystone.conf /etc/keystone/keystone.conf
-cp ./mitaka_configration/keystone/keystone-paste.ini /etc/keystone/keystone-paste.ini
-service keystone stop 
+#cp ./mitaka_configration/keystone/keystone-paste.ini /etc/keystone/keystone-paste.ini
+#service keystone stop 
 
 #copy pre-configured apache files
 cp ./mitaka_configration/apache2/apache2.conf /etc/apache2/apache2.conf
