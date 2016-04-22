@@ -9,14 +9,6 @@
 
 
 #
-#Always backup first
-#
-
-cp -r mitaka_configration mitaka_configration_bkp
-find ./mitaka_configration -type f -exec sed -i -e 's/192.168.2.161/'$my_ip'/g' {} \;
-find ./mitaka_configration -type f -exec sed -i -e 's/cloudenablers_interface_name/'$INTERFACE_NAME'/g' {} \;
-
-#
 #Install the all openstack packages at once!
 #Install the MariaDB and create the appropriate Databases;
 #
