@@ -15,7 +15,7 @@ apt-get install keystone apache2 libapache2-mod-wsgi -y
 
 #Glance
 apt-get install glance -y
-wget http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img 
+#wget http://download.cirros-cloud.net/0.3.4/cirros-0.3.4-x86_64-disk.img 
 
 #Nova
 apt-get install nova-api nova-cert nova-conductor nova-consoleauth nova-novncproxy nova-scheduler -y
@@ -34,7 +34,7 @@ apt-get install lvm2 -y
 apt-get install cinder-volume -y
 
 #Manila
-apt-get install manila-api manila-scheduler -y
+apt-get install manila-api manila-scheduler python-manilaclient -y
 apt-get install manila-share python-pymysql -y
 
 	#Shared File Systems Option 1: No driver support for share servers management
