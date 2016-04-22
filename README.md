@@ -2,6 +2,7 @@
 Bash script to install openstack-Mitaka in ubuntu 14.04LTS
 
 Usage: install.bash --ip_address <Your server Ip> --interface_name <interface name>
+
 Ex: install.bash --ip_address 192.168.1.172 --interface_name eth0
 
 IMPORTANT:
@@ -11,6 +12,9 @@ IMPORTANT:
   - The interface name must be the NIC name of above mentioned IP.
 
 > Author: Vinoth Kumar Selvaraj
+
 > E-Mail: vinothkumar.s@cloudenablers.com
+
 > website: www.cloudenablers.com
+
 > Date: 20-april-2016
