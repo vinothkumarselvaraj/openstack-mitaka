@@ -27,6 +27,7 @@ apt-get install neutron-linuxbridge-agent -y
 
 #Horizon
 apt-get install openstack-dashboard -y
+apt-get purge openstack-dashboard-ubuntu-theme -y
 
 #Cinder
 apt-get install cinder-api cinder-scheduler -y
