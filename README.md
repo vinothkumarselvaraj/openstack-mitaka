@@ -4,9 +4,11 @@ Bash script to install openstack-Mitaka in ubuntu 14.04LTS
 >Download the script using the below command:
 >>git clone https://github.com/vinothkumarselvaraj/openstack-mitaka.git
 
->Script Usage: install.bash --ip_address [Your server Ip] --interface_name [interface name]
+>>cd openstack-mitaka/
 
->Example: install.bash --ip_address 192.168.1.172 --interface_name eth0
+>Script Usage: bash install.bash --ip_address [Your server Ip] --interface_name [interface name]
+
+>Example: bash install.bash --ip_address 192.168.1.172 --interface_name eth0
 
 IMPORTANT:
   - Use this script in the fresh ubuntu 14.04LTS machine.
