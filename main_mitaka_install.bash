@@ -134,7 +134,10 @@ bash mitaka_terminal_commands/manila_terminal_commands.bash
 mv mitaka_configration mitaka_configration_executed
 cp -r mitaka_configration_bkp mitaka_configration
 
+
+#Branding hellovinoth
 #echo "Installation successful :-)"
+cp welcome-vinoth /etc/motd
 cat hellovinoth-logo
 
 
