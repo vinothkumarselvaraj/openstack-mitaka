@@ -23,4 +23,5 @@ IMPORTANT:
 
 > website: www.cloudenablers.com
 
-> Date: 20-april-2016 ![alt tag](https://github.com/vinothkumarselvaraj/openstack-mitaka/blob/master/mitaka_configration/logo-splash.png)
+> Date: 20-april-2016
+![alt tag](https://github.com/vinothkumarselvaraj/openstack-mitaka/blob/master/mitaka_configration/logo-splash.png)
