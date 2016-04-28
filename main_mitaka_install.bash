@@ -77,6 +77,7 @@ cp ./mitaka_configration/keystone/keystone.conf /etc/keystone/keystone.conf
 cp ./mitaka_configration/apache2/apache2.conf /etc/apache2/apache2.conf
 cp ./mitaka_configration/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-available/wsgi-keystone.conf
 #ln -s /etc/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-enabled
+cp ./mitaka_configration/logo-splash.png /usr/share/openstack-dashboard/openstack_dashboard/static/dashboard/img/logo-splash.png
 #service apache2 restart 
 
 #copy pre-configured glance files
