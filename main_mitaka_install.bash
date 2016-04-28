@@ -77,7 +77,6 @@ cp ./mitaka_configration/keystone/keystone.conf /etc/keystone/keystone.conf
 cp ./mitaka_configration/apache2/apache2.conf /etc/apache2/apache2.conf
 cp ./mitaka_configration/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-available/wsgi-keystone.conf
 #ln -s /etc/apache2/sites-available/wsgi-keystone.conf /etc/apache2/sites-enabled
-cp ./mitaka_configration/logo-splash.png /usr/share/openstack-dashboard/openstack_dashboard/static/dashboard/img/logo-splash.png
 #service apache2 restart 
 
 #copy pre-configured glance files
@@ -98,6 +97,7 @@ cp ./mitaka_configration/neutron/plugins/ml2/ml2_conf.ini /etc/neutron/plugins/m
 
 #copy pre-configured horizon files 
 cp ./mitaka_configration/openstack-dashboard/local_settings.py /etc/openstack-dashboard/local_settings.py
+cp ./mitaka_configration/logo-splash.png /usr/share/openstack-dashboard/openstack_dashboard/static/dashboard/img/logo-splash.png
 service apache2 restart 
 
 #copy pre-configured manila files
