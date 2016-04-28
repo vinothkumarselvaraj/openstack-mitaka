@@ -1,4 +1,3 @@
-![alt tag](https://github.com/vinothkumarselvaraj/openstack-mitaka/blob/master/mitaka_configration/logo-splash.png)
 # OpenStack-mitaka (All-in-one node using single NIC) for Ubuntu 14.04LTS
 Bash script to install openstack-Mitaka in ubuntu 14.04LTS
 ![alt tag](https://github.com/CloudenablersPvtLtd/openstack-setup/blob/mitaka/openstack-mitaka/mitaka_configration/openstack-mitaka-logo.png)
@@ -24,4 +23,4 @@ IMPORTANT:
 
 > website: www.cloudenablers.com
 
-> Date: 20-april-2016
+> Date: 20-april-2016 ![alt tag](https://github.com/vinothkumarselvaraj/openstack-mitaka/blob/master/mitaka_configration/logo-splash.png)
